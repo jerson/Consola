@@ -117,28 +117,26 @@ en caso el campo sea incorrecto se mostrara un mensaje de error para que se ingr
 
 - ####Crear un menú
       
-       Menu menu = new Menu();
-       
-       menu.setTitulo("Titulo del Menu");
-       menu.agregar("opcion 1", new MenuCallback() {
+		Menu menu = new Menu();
+		menu.setTitulo("Titulo del Menu");
+		menu.agregar("opcion 1", new MenuCallback() {
+           @Override
+           public void ejecutar() {
+               System.out.println("tu codigo aqui");
+           }
+		});
+		
+		menu.agregar("opcion 2", new MenuCallback() {
 
            @Override
            public void ejecutar() {
                System.out.println("tu codigo aqui");
            }
-       });
-       
-       menu.agregar("opcion 2", new MenuCallback() {
-
-           @Override
-           public void ejecutar() {
-               System.out.println("tu codigo aqui");
-           }
-       });
-       
-       menu.mostrar();
-       
-       
+		});
+		
+		menu.mostrar();
+		
+		
         //------------------------------------------------------------
         //-                      Titulo del Menu                     -
         //------------------------------------------------------------
@@ -161,40 +159,39 @@ en caso el campo sea incorrecto se mostrara un mensaje de error para que se ingr
         
 - ####Crear sub menu
 
-       Menu menu = new Menu();
-       
-       menu.setTitulo("Titulo del Menu");
-       menu.agregar("opcion 1", new MenuCallback() {
-
+		Menu menu = new Menu();
+		
+		menu.setTitulo("Titulo del Menu");
+		menu.agregar("opcion 1", new MenuCallback() {
+		
            @Override
            public void ejecutar() {
                System.out.println("tu codigo aqui");
            }
-       });
-       
-       menu.agregar("opcion 2", new MenuCallback() {
-
+		});
+		
+		menu.agregar("opcion 2", new MenuCallback() {
+		
            @Override
            public void ejecutar() {
                System.out.println("tu codigo aqui");
            }
-       });
-       
-       
-       Menu submenu = new Menu();
-       submenu.setTitulo("Titulo del Sub Menu");
-       
-       submenu.agregar("sub opcion", new MenuCallback() {
-
+		});
+		
+		Menu submenu = new Menu();
+		submenu.setTitulo("Titulo del Sub Menu");
+		
+		submenu.agregar("sub opcion", new MenuCallback() {
+		
            @Override
            public void ejecutar() {
                System.out.println("tu codigo aqui");
            }
-       });
-       menu.agregar("Submenu", submenu);
-       
-       menu.mostrar();
-       
+         });
+		menu.agregar("Submenu", submenu);
+		
+		menu.mostrar();
+		
         //------------------------------------------------------------
         //-                      Titulo del Menu                     -
         //------------------------------------------------------------
