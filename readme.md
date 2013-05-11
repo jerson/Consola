@@ -2,7 +2,7 @@
 Consola
 ========
 
-metodos basicos de consola para obtener variables de manera simple y poder crear menus de manera facil y rapida.
+métodos básicos de consola para obtener variables de manera simple y poder crear menús de manera fácil y rápida.
 
 
 
@@ -113,9 +113,9 @@ en caso el campo sea incorrecto se mostrara un mensaje de error para que se ingr
 
 
 
-###Ejemplos de Menu
+###Ejemplos de Menú
 
-- ####Crear un menu
+- ####Crear un menú
       
        Menu menu = new Menu();
        
