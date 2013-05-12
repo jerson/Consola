@@ -2,5 +2,3 @@
 /manifest.mf
 /build.xml
 /build/
-/dist/
-!/dist/Consola.jar
